@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: .  # Caminho para o Dockerfile
+    ports:
+      - "8001:8000"  # Mapeia a porta do contêiner para a porta do host
+    volumes:
+      - .:/app  # Mapeia o diretório atual para /app no contêiner
+    environment:
+      FLASK_APP: app.py
+      FLASK_RUN_HOST: 0.0.0.0
+      DIRETORIO_RESULTADOS: /app/resultados_rede
+      UPDATE_REPORT_SCRIPT: /app/update_report.py
+      LOG_FILE: /app/logs/app.log
+

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Início - Sistema de Relatórios de Rede Automatizado</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 20px;
+        }
+        .container {
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Bem-vindo ao Sistema de Relatórios de Rede Automatizado</h1>
+	<p>Ferramenta encontra-se em constante evoludão e adaptação, ela estará disponivel em meu github, para obter o link entre em contato na pagina Ajuda</p>
+	<p>Este sistema permite gerar, visualizar e converter relatórios de análise de rede. Utilize os seguintes recursos:</p>
+
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="{{ url_for('lista_relatorios') }}">Ver relatórios</a> - Visualize todos os relatórios gerados e acesse cada um deles.
+            </li>
+            <li class="list-group-item">
+                <a href="{{ url_for('ajuda') }}">Ajuda</a> - Obtenha mais informações sobre como utilizar o sistema.
+            </li>
+        </ul>
+        <form action="{{ url_for('gerar_relatorio') }}" method="post" class="mt-4">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Gerar Relatório</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

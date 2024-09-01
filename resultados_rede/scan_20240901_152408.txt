@@ -1,0 +1,9 @@
+Interface: wlo1, type: EN10MB, MAC: 64:32:a8:7c:13:8e, IPv4: 192.168.1.246
+Starting arp-scan 1.10.0 with 256 hosts (https://github.com/royhills/arp-scan)
+192.168.1.254	78:17:35:f0:7f:f0	Nokia Shanghai Bell Co., Ltd.
+192.168.1.190	a2:3e:9c:05:1d:c8	(Unknown: locally administered)
+192.168.1.245	06:38:f7:b6:3f:3c	(Unknown: locally administered)
+192.168.1.191	a2:3e:9c:05:1d:c8	(Unknown: locally administered)
+
+4 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.10.0: 256 hosts scanned in 2.177 seconds (117.59 hosts/sec). 4 responded
