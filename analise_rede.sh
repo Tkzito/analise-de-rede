@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # Define o diretório dos arquivos
+<<<<<<< HEAD
 DIR="/home/user/Analise-de-Rede_e_Relatorio/resultados_rede"
+=======
+DIR="/home/tk/analise-de-rede/resultados_rede"
+>>>>>>> 90f4f845 (Atualização - Inicial)
 SCAN_FILE="$DIR/scan_$(date +'%Y%m%d_%H%M%S').txt"
 
 # Detecta a interface de rede ativa
